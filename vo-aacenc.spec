@@ -1,12 +1,12 @@
 Summary:	VisualOn AAC encoder library
 Summary(pl.UTF-8):	Biblioteka kodera VisualOn AAC
 Name:		vo-aacenc
-Version:	0.1.1
+Version:	0.1.2
 Release:	1
 License:	Apache v2.0
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/opencore-amr/%{name}-%{version}.tar.gz
-# Source0-md5:	b5724e89d8b33abe41bc57032e671019
+# Source0-md5:	cc862dce14ea5d688506904160c65a02
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -69,7 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog NEWS NOTICE README
+%doc ChangeLog NOTICE README
 %attr(755,root,root) %{_libdir}/libvo-aacenc.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libvo-aacenc.so.0
 
